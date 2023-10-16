@@ -1,0 +1,129 @@
+.body-bg {
+  background-color: rgb(255, 255, 255);
+}
+
+.header {
+  width: 100%;
+  text-align: left;
+  background-color: #f5d2d2;
+  padding: 8px 10px;
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+.mycard {
+  display: flex;
+  flex-direction: column; /* Установка направления флекс-контейнера на вертикальное */
+  justify-content: space-between; /* Равномерное распределение элементов внутри карточки по вертикали */
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: calc(25% - 20px); /* Фиксированная ширина с учетом отступов */
+  margin: 10px; /* Внешний отступ для карточек */
+  border-radius: 10px;
+  overflow: hidden; /* Обрезать изображение, если оно больше карточки */
+  position: relative;
+}
+
+
+
+.myrow {
+  display: flex;
+  flex-wrap: wrap; /* Разрешаем перенос строк */
+  margin-top: 40px;
+  margin-bottom: 35px;
+  flex-direction: row;
+  
+}
+
+.mycontainer {
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.main-buttom{
+  display: block; /* Делаем кнопку блочным элементом, чтобы можно было настраивать ширину */
+  width: 100%; /* Занимаем всю доступную ширину */
+  text-align: center; /* Выравниваем текст по центру */
+  margin-top: auto; /* Перемещаем кнопку вниз внутри карточки */
+  padding: 12px 0; /* Отступы сверху и снизу */
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #4558c2d3;
+  color: whitesmoke;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Стили для кнопки при наведении */
+.main-buttom:hover {
+  background-color: #4cbe6e;
+  color: rgb(255, 255, 255);
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 48px; /* Размещаем текст внизу */
+  left:0; /* Размещаем текст слева */
+  width: 100%;
+  background: rgba(255, 255, 255, 0.507);
+  color:rgb(109, 73, 73);
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left; /* Выравниваем текст слева */
+}
+
+
+
+.price{
+  color: rgb(104, 83, 83);
+}
+
+html, body {
+  margin: 0; /* Убираем отступы для html и body элементов */
+  padding: 0; /* Убираем внутренние отступы для html и body элементов */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(235, 235, 231);
+}
+
+.reviews-btn{
+  background-color:#6077f8;
+  text-decoration: none;
+  color: whitesmoke;
+  border-radius: 5px;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 7px;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  float:right;
+  margin-top: 4px;
+}
+
+.reviews-btn:hover{
+  transition: 0.3s;
+  background-color:#4352aa;
+}
+
+.logo-img{
+  height: 45px;
+  width: 45px;
+}
+
+.main-header-btn{
+  border: none;
+  background-color: transparent;
+  color: rgb(134, 80, 80);
+}
