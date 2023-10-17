@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+        <div class='myrow'>
+            <div class="mycard">
+                <img src="{% static 'img/aqua_pink.jpg' %}" alt="Img" class="card-img">
+            <div class="text-overlay"><b>Роза Aqua</b>
+            <div class="price">От: {{aqua_pink}} BYN</div>
+            </div>
+                <a class="main-buttom" href="{% url 'aqua_pink' %}">
+                    На карте
+            </a>
+            </div>
+            <div class="mycard">
+                <img src="{% static 'img/avalanche_white.jpg' %}" alt="Img" class="card-img">
+            <div class="text-overlay"><b>Роза Avalanche</b>
+            <div class="price">От: {{avalanche_white}} BYN</div>
+            </div>
+            <a class="main-buttom" href="{% url 'avalanche_white' %}">
+                На карте
+            </a>
+            </div>
+            <div class="mycard">
+                <img src="{% static 'img/freedom_red.jpg' %}" alt="Img" class="card-img">
+            <div class="text-overlay"><b>Роза Freedom</b>
+            <div class="price">От: {{freedom_red}} BYN</div>
+            </div>
+            <a class="main-buttom href="{% url 'freedom_red' %}">На карте</a>
+            </div>
+            <div class="mycard">
+                <img src="{% static 'img/naomi_red.jpg' %}" alt="Img" class="card-img">
+            <div class="text-overlay"><b>Роза Naomi</b>
+            <div class="price">От: {{naomi_red}} BYN</div>
+            </div>
+            <a class="main-buttom" href="{% url 'naomi_red' %}">На карте</a>
+            </div>
+        </div>
+        <div class='myrow'>
+            <div class="mycard">
+                <img src="{% static 'img/peach_yellow.jpeg' %}" alt="Img" class="card-img">
+            <div class="text-overlay"><b>Роза Peach</b>
+            <div class="price">От: {{pich_yellow}} BYN</div>
+            </div>
+            <a class="main-buttom" href="{% url 'pich_yellow' %}">На карте</a>
+            </div>
+            <div class="mycard">
+                <img src="{% static 'img/penny_yellow.jpg' %}" alt="Img" class="card-img">
+            <div class="text-overlay"><b>Роза Penny Lane</b>
+            <div class="price">От {{penny_yellow}} BYN</div>
+            </div>
+            <a class="main-buttom" href="{% url 'penny_yellow' %}">На карте</a>
+            </div>
+            <div class="mycard">
+                <img src="{% static 'img/white-naomi_white.jpeg' %}" alt="Img" class="card-img">
+                <div class="text-overlay"><b>Роза Naomi White</b>
+                <div class="price">От {{naomi_white}} BYN</div>
+            </div>
+            <a class="main-buttom" href="{% url 'naomi_white' %}">На карте</a>
+            </div>
+{% endblock content %}
+
+</body>
+</html>
